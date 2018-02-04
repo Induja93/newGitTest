@@ -1,0 +1,10 @@
+            Click(Antimalware_Conditions_EventAttribute, "Antimalware_Conditions_EventAttribute");
+            Type(Antimalware_Conditions_EventAttribute_try, propertyparse("accountId", lang));
+            Wait(2000);
+            Click(Antimalware_Conditions_Operator, "Antimalware_Conditions_Operator");
+            //SendKey(Keys.ArrowDown);
+            SendKey(Keys.ArrowDown);
+            SendKey(Keys.Enter);
+            Type(Antimalware_Conditions_TypeValue, JsonParser.GetJsonProperty("InputField", "AccountID"));
+            Wait(1000);
+            Click(Antimalware_AdvancedTab, "Antimalware_AdvancedTab");
